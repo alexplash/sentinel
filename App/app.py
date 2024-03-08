@@ -34,7 +34,8 @@ app.layout = html.Div(id='main-container', style={
 }, children=[
     html.Button([
                 html.Img(src=app.get_asset_url('database_icon_135716.png'), style={'width': '60px', 'height': '60px'}),
-                html.Div('Detect Users', className='button-text')
+                html.Div('Detect Users', className='button-text'),
+                html.Div('- user data uploaded -', style={'color': 'rgba(255, 255, 255, 0.8)', 'fontSize': '10px', 'marginTop': '10px'}),
     ], id='analyze-data-button', className='button'),
     html.Div(id='new-content', style={'display': 'none'})
 ])
