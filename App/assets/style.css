@@ -1,0 +1,84 @@
+/* assets/style.css */
+@font-face {
+  font-family: 'Aquire';
+  src: url('aquire-font/AquireLight-YzE0o.otf') format('opentype');
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  color: white; /* Ensures text is visible on a potentially dark background */
+  background-image: url('spherewave.gif'); /* Add your background image here */
+  background-size: 50%; /* Cover the entire page */
+  background-position: center; /* Center the background image */
+}
+
+.centered-container {
+  background-color: rgba(51, 51, 51, 0.2);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh; /* Keep this to ensure full height and centering */
+}
+
+.button-container {
+  /* Adjust to serve as a full-screen semi-transparent overlay */
+  background-color: rgba(51, 51, 51, 0.5);
+  position: absolute; /* Overlay the background */
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.button-inner-container {
+  display: flex;
+  justify-content: center; /* Center buttons horizontally */
+  align-items: center; /* Center buttons vertically */
+  gap: 180px; /* Space between buttons */
+}
+
+.button {
+  width: 250px; /* Square shape requires equal width and height */
+  height: 200px;
+  border: 2px solid white; /* White border */
+  border-radius: 15px; /* Rounded corners for a softer look */
+  background-color: rgba(0, 0, 0, 0.8); /* Semi-transparent background */
+  color: white; /* White text color */
+  font-size: 16px; /* Font size */
+  cursor: pointer; /* Cursor indicates button */
+  display: flex;
+  justify-content: center; /* Center content horizontally */
+  align-items: center; /* Center content vertically */
+  text-align: center; /* Ensure text is centered */
+  transition: background-color 0.3s; /* Smooth transition for hover effect */
+  flex-direction: column; /* Stack icon and text vertically */
+  padding: 10px;
+}
+
+.button img {
+  width: 80px; /* Increase width as needed */
+  height: auto; /* Keep the height auto to maintain aspect ratio */
+  margin-bottom: 10px; /* Add some space between the image and the text */
+  filter: invert(100%); /* Invert colors to make black icons appear white */
+  /* Adjust width and height as needed */
+}
+
+.button-text {
+  margin-top: 5px; /* Spacing between icon and text */
+  font-size: 18px; /* Adjust the font size as needed */
+  font-weight: bold;
+  color: white; /* Color of the text */
+  text-align: center; /* Center the text */
+}
+
+.button:hover {
+  background-color: rgba(255, 255, 255, 0.6); /* Lighter color on hover */
+}
+
+
+
