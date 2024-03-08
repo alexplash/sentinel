@@ -2,8 +2,8 @@
   <img src="images/image1.png" width="48%" />
   <img src="images/image2.png" width="48%" /> 
 </p>
-<p float="left">
-  <img src="images/image3.png" width="48%" />
+<p float="center">
+  <img src="images/diagram.png" width="48%" />
 </p>
 
 # Sentinel
