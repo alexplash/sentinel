@@ -53,23 +53,23 @@ def display_new_content(n_clicks):
         item_container_style = {
             'display': 'flex',
             'flex-direction': 'row',
-            'justifyContent': 'space-between',  # Distribute space evenly between user and status
+            'justifyContent': 'space-between',
             'alignItems': 'center',
             'margin': '10px',
-            'padding': '0 20px',  # Added padding for each row
+            'padding': '0 20px',
             'border': '2px solid white',
             'border-radius': '10px',
-            'background-color': 'rgba(0, 0, 0, 0.8)',  # Slight transparency for row background
+            'background-color': 'rgba(0, 0, 0, 0.8)',
         }
         user_style = {
-            'flex-grow': '1',  # User box grows to fill space, ensuring alignment
+            'flex-grow': '1',
             'margin': '5px',
             'padding': '5px 10px',
             'border-radius': '10px',
             'border': '2px solid white',
         }
         status_style = lambda color: {
-            'flex-basis': '150px',  # Fixed basis for the status box
+            'flex-basis': '150px',
             'text-align': 'center',
             'border-radius': '10px',
             'border': '2px solid white',
@@ -93,9 +93,9 @@ def display_new_content(n_clicks):
 
         content = html.Div(style={
             'overflow-y': 'scroll',
-            'height': '75vh',  # Fill most of the container's vertical space
-            'width': '90%',  # Width adjusted to fill most of the container's horizontal space
-            'max-width': 'none',  # Remove max-width constraint
+            'height': '75vh',
+            'width': '90%',
+            'max-width': 'none',
         }, children=items)
 
         return dcc.Loading(
