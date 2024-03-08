@@ -2,7 +2,7 @@
 
 ## Overview
 
-Sentinel is a language model aimed at detecting fraudulent posts and users across various social media platforms/mediums, including YouTube, Twitter, Instagram, and SMS. It employs transformer architecture and the BERT pretrained model for language understanding, with data preparation and cleaning facilitated by Apache Spark. The application's interface is built with Python Dash, enabling straightforward user interactions.
+Sentinel is a language model aimed at detecting fraudulent posts and users across various social media platforms/mediums, including YouTube, Twitter, Instagram, and SMS. It uses a transformer architecture, and the BERT pretrained model for NLP, with data preparation and cleaning facilitated by Apache Spark. The application's interface is built with Python Dash, enabling straightforward user interactions.
 
 ## Key Features
 
@@ -19,4 +19,5 @@ Sentinel is a language model aimed at detecting fraudulent posts and users acros
 - Python 3.6 or newer
 - Apache Spark
 - Pretrained BERT model
+- Google Colab for model training
 - Python Dash
