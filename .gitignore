@@ -3,3 +3,5 @@ Data/*
 !Data/spark.py
 
 Training/saved_weights.pt
+
+Sentinel_Demo.mov
